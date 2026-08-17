@@ -47,6 +47,11 @@ Rules:
 - One question at a time; wait for the answer before the next.
 - After each answer, briefly correct or deepen — teaching continues through the exam.
 - Adapt difficulty: if they nail one instantly, make the next in that part harder.
+- **Watch for borrowed voices.** If an answer's style shifts sharply (sudden essays from a
+  telegram-style learner, formatting artifacts from another AI, internals the course never
+  taught), don't accuse — acknowledge the content, then verify with a short own-words
+  follow-up drawn from something they personally did in the labs. Grade the follow-up,
+  not the paste. (Learned from the very first graduate, who tested this in field conditions.)
 
 ### 4. Grading bar
 
