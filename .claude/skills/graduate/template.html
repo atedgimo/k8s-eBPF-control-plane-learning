@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Certificate of Completion — Kubernetes Control Plane + eBPF Lab</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2rem; background: #efece4;
+    font-family: Georgia, 'Times New Roman', serif; color: #2b2a26;
+    display: flex; justify-content: center; align-items: center; min-height: 100vh;
+  }
+  .cert {
+    max-width: 880px; width: 100%; background: #fffdf7;
+    border: 3px double #8a7b52; padding: 2.2rem;
+    box-shadow: 0 10px 34px rgba(60, 50, 20, .14);
+  }
+  .inner { border: 1px solid #d8cfae; padding: 2.6rem 2.2rem; text-align: center; }
+  .seal { font-size: 2.4rem; letter-spacing: .5rem; margin-bottom: .4rem; }
+  .kicker {
+    text-transform: uppercase; letter-spacing: .38em; font-size: .72rem;
+    color: #8a7b52; margin: 0 0 .6rem;
+  }
+  h1 { font-size: 1.75rem; margin: 0 0 .2rem; letter-spacing: .04em; font-weight: 600; }
+  .scope { font-size: .82rem; color: #8a7b52; letter-spacing: .14em; margin-bottom: 1.6rem; }
+  .certifies { font-size: .95rem; color: #5c5546; margin: 0; }
+  .name { font-size: 2.5rem; font-style: italic; margin: .5rem 0 .15rem; }
+  .rule { width: 280px; border: 0; border-top: 1px solid #8a7b52; margin: 0 auto 1.4rem; }
+  .body-text { max-width: 620px; margin: 0 auto; line-height: 1.6; font-size: .98rem; }
+  .parts { display: flex; gap: .7rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0; }
+  .part {
+    border: 1px solid #d8cfae; padding: .5rem .85rem; font-size: .74rem;
+    letter-spacing: .1em; color: #5c5546; background: #faf7ee;
+  }
+  .thesis {
+    font-style: italic; color: #5c5546; max-width: 600px;
+    margin: 1.2rem auto; line-height: 1.55; font-size: .92rem;
+  }
+  .highlight { font-size: .9rem; color: #2b2a26; margin: 1.2rem auto 0; max-width: 600px; }
+  .highlight em { color: #8a7b52; font-style: normal; letter-spacing: .08em; font-size: .78rem; }
+  .footer {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-top: 2.6rem; gap: 2rem;
+  }
+  .sig { border-top: 1px solid #8a7b52; padding-top: .45rem; font-size: .84rem; color: #5c5546; min-width: 220px; }
+  .sig strong { display: block; color: #2b2a26; font-size: .95rem; letter-spacing: .03em; }
+  .fine {
+    margin-top: 1.8rem; font-size: .68rem; color: #a29a83; letter-spacing: .04em;
+  }
+  @media print {
+    body { padding: 0; background: #fff; min-height: 0; }
+    .cert { box-shadow: none; max-width: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="cert"><div class="inner">
+    <div class="seal">⎈ 🎓 🐝</div>
+    <p class="kicker">Certificate of Completion</p>
+    <h1>Kubernetes Control Plane + eBPF — Hands-On Lab</h1>
+    <div class="scope">{{SCOPE}}</div>
+
+    <p class="certifies">This certifies that</p>
+    <div class="name">{{NAME}}</div>
+    <hr class="rule">
+
+    <p class="body-text">
+      has completed the full hands-on course: built a Kubernetes cluster and read its
+      database raw, spoke to the apiserver without kubectl, sabotaged a Deployment and
+      watched reconciliation heal it, wrote a controller by hand, loaded self-written
+      programs into a live Linux kernel past the verifier, and traced a NetworkPolicy
+      from a declarative object in etcd to an eBPF verdict dropping packets in the kernel.
+    </p>
+
+    <div class="parts">
+      <span class="part">PART A · CONTROL PLANE</span>
+      <span class="part">PART B · eBPF</span>
+      <span class="part">PART C · CILIUM</span>
+    </div>
+
+    <p class="thesis">
+      “The control plane declares desired state, controllers watch and reconcile —
+      and reconciliation bottoms out in eBPF programs and maps inside the kernel.”
+    </p>
+
+    <p class="highlight"><em>EXAMINER'S NOTE</em><br>{{HIGHLIGHT}}</p>
+
+    <div class="footer">
+      <div class="sig">{{DATE}}<strong>Date of completion</strong></div>
+      <div class="sig">Claude Code<strong>Lab Mentor &amp; Examiner</strong></div>
+    </div>
+
+    <p class="fine">
+      Issued after an oral examination conducted in-session by Claude Code.
+      Not an accredited credential — but earned nonetheless.
+    </p>
+  </div></div>
+</body>
+</html>

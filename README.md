@@ -61,6 +61,14 @@ VM's single kernel — which is exactly where Cilium loads its eBPF programs.
 | [EBPF-HOOKS.md](EBPF-HOOKS.md) | eBPF reference: program lifecycle, the hook map, when to use which |
 | [kind-config.yaml](kind-config.yaml) | Lab 0 cluster config (1 control-plane + 2 workers) |
 
+## 🎓 Graduation
+
+Finished all three parts? Open Claude Code in this repo and run **`/graduate`**.
+Claude gives you a short oral exam — two questions per part, "what happens if…" style,
+freshly generated so there's no answer key — coaches you through anything shaky, and
+then generates your personalized completion certificate as a printable HTML file.
+The certificate is earned: no exam, no certificate.
+
 ## If commands differ
 
 Trust **CHEATSHEET.md** over the guides — it records what actually worked here

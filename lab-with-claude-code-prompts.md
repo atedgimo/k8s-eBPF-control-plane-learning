@@ -152,6 +152,17 @@
 
 ---
 
+# Graduation 🎓
+
+When you've finished all three parts, run **`/graduate`** in Claude Code (the skill ships
+with this repo). It's the final lab: a six-question oral exam in the spirit of the
+"test me" prompts above — questions are generated fresh per learner, so understanding is
+the only way through. Pass, and Claude generates a personalized certificate
+(`certificate-<you>.html`, printable, kept out of git). If a concept wobbles, you review
+it together and finish the exam — the goal is understanding, not gatekeeping.
+
+---
+
 # Reusable prompt templates (copy-paste)
 
 **When something breaks:**
